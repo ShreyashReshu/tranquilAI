@@ -39,7 +39,7 @@ const Footer = () => {
                 placeholder="Your message" 
                 className="w-full h-24 bg-gray-800 border border-gray-700 rounded-md px-3 py-2 text-white placeholder:text-gray-400 focus:outline-none focus:border-primary-purple"
               ></textarea>
-              <Button className="w-full bg-primary-purple hover:bg-primary-purple/90">Send Message</Button>
+              <Button className="w-full bg-primary-purple hover:bg-blue-600">Send Message</Button>
             </form>
           </div>
           

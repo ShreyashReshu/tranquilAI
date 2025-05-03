@@ -63,10 +63,24 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Add custom colors for Tranquil AI
-				'primary-purple': '#8A4FFF',
-				'soft-purple': '#F8F5FF',
+				// Restored colors to the original blue-purple theme
+				'primary-purple': '#4080B0',
+				'dark-blue': '#2C5282',
+				'light-blue': '#90CDF4',
+				'blue-50': '#EBF8FF',
+				'blue-100': '#D1E9FF',
+				'blue-200': '#A8D1FF',
+				'blue-300': '#7ABAFF',
+				'blue-400': '#4299E1',
+				'blue-500': '#3182CE',
+				'blue-600': '#2B6CB0',
+				'blue-700': '#2C5282',
+				'blue-800': '#2A4365',
+				'blue-900': '#1A365D',
 				'dark-charcoal': '#333333',
+				// Add green colors for accents
+				'green-400': '#48BB78',
+				'green-500': '#38A169',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,12 +103,60 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-left': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateX(-20px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'fade-in-right': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateX(20px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.9',
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out forwards',
+				'fade-in-left': 'fade-in-left 0.6s ease-out forwards',
+				'fade-in-right': 'fade-in-right 0.6s ease-out forwards',
+				'pulse': 'pulse 3s infinite ease-in-out'
+			},
+			backgroundImage: {
+				'blue-gradient': 'linear-gradient(to right bottom, #4080B0, #90CDF4)',
+				'blue-gradient-r': 'linear-gradient(to right, #4080B0, #90CDF4)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

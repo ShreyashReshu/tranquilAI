@@ -8,11 +8,12 @@ import Testimonials from '@/components/Testimonials';
 import DownloadSection from '@/components/DownloadSection';
 import UpcomingFeatures from '@/components/UpcomingFeatures';
 import Vision from '@/components/Vision';
+import MediaPresence from '@/components/MediaPresence';
 import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-soft-purple text-dark-charcoal">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50 to-white text-dark-charcoal">
       <Navigation />
       <Header />
       <div className="container mx-auto px-4 space-y-24">
@@ -22,6 +23,7 @@ const Index = () => {
         <DownloadSection />
         <UpcomingFeatures />
         <Vision />
+        <MediaPresence />
       </div>
       <Footer />
     </div>

@@ -26,8 +26,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-r from-purple-100 to-blue-100 rounded-3xl">
-      <div className="text-center mb-16">
+    <section id="testimonials" className="py-24 bg-gradient-to-r from-blue-100/60 to-purple-100/60 rounded-3xl">
+      <div className="text-center mb-16 animate-fade-in">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary-purple">What Our Users Say</h2>
         <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto px-4">
           Real stories from our users highlight how Tranquil AI has made a difference in their lives.
@@ -36,7 +36,11 @@ const Testimonials = () => {
 
       <div className="grid md:grid-cols-3 gap-8 px-6">
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
+          <Card 
+            key={index} 
+            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 flex flex-col transform hover:-translate-y-2"
+            style={{ animationDelay: `${index * 200}ms` }}
+          >
             <CardContent className="p-0 flex-grow">
               <div className="mb-6">
                 <svg className="h-8 w-8 text-primary-purple opacity-50" fill="currentColor" viewBox="0 0 32 32">
@@ -46,7 +50,7 @@ const Testimonials = () => {
               <p className="text-gray-600 italic mb-6 text-lg">{testimonial.quote}</p>
             </CardContent>
             <div className="flex items-center mt-4">
-              <Avatar className="h-12 w-12 bg-primary-purple/20 text-primary-purple">
+              <Avatar className="h-12 w-12 bg-gradient-to-br from-primary-purple/20 to-blue-400/20 text-primary-purple">
                 <AvatarFallback className="font-medium">{testimonial.initials}</AvatarFallback>
               </Avatar>
               <div className="ml-4">
