@@ -12,6 +12,7 @@ import JournalingPage from "./pages/JournalingPage";
 import BreathingExercisesPage from "./pages/BreathingExercisesPage";
 import GuidedMeditationPage from "./pages/GuidedMeditationPage";
 import SleepAudiosPage from "./pages/SleepAudiosPage";
+import DownloadPage from "./pages/DownloadPage";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient({
@@ -31,6 +32,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/download" element={<DownloadPage />} />
           <Route path="/ai-therapy" element={<AITherapyPage />} />
           <Route path="/mood-logging" element={<MoodLoggingPage />} />
           <Route path="/journaling" element={<JournalingPage />} />

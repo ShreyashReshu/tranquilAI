@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 const MediaPresence = () => {
   const mediaItems = [
@@ -37,37 +36,28 @@ const MediaPresence = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-4">
-        <Table className="w-full">
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-1/3">Publication</TableHead>
-              <TableHead className="w-1/2">What They Said</TableHead>
-              <TableHead className="w-1/6 text-right">Link</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {mediaItems.map((item, index) => (
-              <TableRow 
-                key={index}
-                className="hover:bg-blue-50/50 transition-colors"
+        <ul className="space-y-4">
+          {mediaItems.map((item, index) => (
+            <li 
+              key={index}
+              className="bg-white/70 backdrop-blur-sm p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col md:flex-row md:items-center justify-between gap-4"
+            >
+              <div className="flex-1">
+                <h3 className="font-medium text-xl text-primary-purple mb-1">{item.name}</h3>
+                <p className="text-gray-600 italic">"{item.quote}"</p>
+              </div>
+              <a 
+                href={item.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-blue-100/50 text-primary-purple hover:bg-blue-200/50 transition-colors"
               >
-                <TableCell className="font-medium text-primary-purple">{item.name}</TableCell>
-                <TableCell className="text-gray-600 italic">"{item.quote}"</TableCell>
-                <TableCell className="text-right">
-                  <a 
-                    href={item.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-flex items-center text-primary-purple hover:text-blue-600 transition-colors"
-                  >
-                    <span className="mr-1">Visit</span>
-                    <ExternalLink size={16} />
-                  </a>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+                <span className="mr-2">Visit</span>
+                <ExternalLink size={16} />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

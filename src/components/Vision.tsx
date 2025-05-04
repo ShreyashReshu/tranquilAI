@@ -6,7 +6,7 @@ const Vision = () => {
     <section id="vision" className="py-20">
       <div className="max-w-5xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-5xl font-bold mb-8 text-primary-purple animate-fade-in">Our Vision</h2>
-        <div className="bg-gradient-to-r from-purple-100/70 to-blue-100/70 rounded-3xl p-8 md:p-10 shadow-xl">
+        <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-xl">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
             At <span className="font-semibold text-primary-purple">Tranquil AI</span>, our vision is to create a world where mental health support is universally accessible. 
             We strive to make emotional well-being a priority for everyone, regardless of location or circumstances. 
