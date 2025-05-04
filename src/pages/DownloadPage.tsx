@@ -27,7 +27,7 @@ const DownloadPage = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-blue-50/80 backdrop-blur-sm p-8 rounded-2xl flex flex-col items-center text-center">
                   <img 
-                    src="/lovable-uploads/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
+                    src="/logodownload/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
                     alt="iOS App" 
                     className="w-24 h-24 mb-6" 
                   />
@@ -48,7 +48,7 @@ const DownloadPage = () => {
                 
                 <div className="bg-blue-50/80 backdrop-blur-sm p-8 rounded-2xl flex flex-col items-center text-center">
                   <img 
-                    src="/lovable-uploads/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
+                    src="/logodownload/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
                     alt="Android App" 
                     className="w-24 h-24 mb-6" 
                   />

@@ -34,7 +34,7 @@ const Navigation = () => {
       <div className="container mx-auto flex justify-between items-center py-5 px-4">
         <a href="#home" className="flex items-center gap-3">
           <img 
-            src="/lovable-uploads/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
+            src="/logodownload/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
             alt="Tranquil AI Logo" 
             className="w-10 h-10"
           />

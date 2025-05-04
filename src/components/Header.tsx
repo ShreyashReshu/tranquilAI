@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <div className="mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
+            src="/logodownload/d5154c15-1682-4e4b-b010-f464b83cad81.png" 
             alt="Tranquil AI Logo" 
             className="w-32 h-32 md:w-40 md:h-40 object-contain animate-pulse"
           />
