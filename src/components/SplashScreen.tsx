@@ -48,7 +48,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
           </p>
           <div className="flex justify-center mt-3">
             <div className="bg-blue-200/30 px-4 py-1 rounded-full backdrop-blur-sm border border-blue-200/50">
-              <p className="text-white text-sm">★★★★★ Trusted by 50,000+ users</p>
+              <p className="text-white text-sm">★★★★★ Trusted by 500+ users</p>
             </div>
           </div>
         </div>
