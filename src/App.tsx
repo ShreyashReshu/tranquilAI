@@ -30,16 +30,8 @@ const App = () => {
   // State to control splash screen visibility
   const [showSplash, setShowSplash] = useState(true);
   
-  // Check if this is the first time the user is visiting the site in this session
-  useEffect(() => {
-    // You could use localStorage to only show the splash once per session
-    const hasSeenSplash = sessionStorage.getItem("hasSeenSplash");
-    if (hasSeenSplash) {
-      setShowSplash(false);
-    } else {
-      sessionStorage.setItem("hasSeenSplash", "true");
-    }
-  }, []);
+  // Show splash screen on every page load/refresh
+  // We're removing the sessionStorage check which was preventing the splash screen on refresh
 
   return (
     <QueryClientProvider client={queryClient}>
